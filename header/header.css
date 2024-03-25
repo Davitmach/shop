@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header {
+    padding: 20px 0;
+  }
+}
+header .Header_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .Header_title {
+    padding: 10px 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Header_title {
+    display: none;
+  }
+}
+header .Header_title .Bank_card_box {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .Header_title .Bank_card_box:hover p {
+  color: #303030;
+}
+header .Header_title .Bank_card_box:hover i {
+  color: rgb(36, 83, 212);
+}
+header .Header_title .Bank_card_box i {
+  font-size: 16px;
+  transition: 0.4s;
+}
+header .Header_title .Bank_card_box p {
+  color: #676770;
+  font-family: "Roboto";
+  font-size: 11px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+header .Header_title div {
+  display: flex;
+  gap: 15px;
+}
+header .Header_title div > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .Header_title div > div:hover {
+  cursor: pointer;
+}
+header .Header_title div > div:hover h1 {
+  color: #303030;
+}
+header .Header_title div > div:hover i {
+  color: rgb(36, 83, 212);
+}
+header .Header_title div > div i {
+  color: #676770;
+  transition: 0.4s;
+}
+header .Header_title div > div h1 {
+  color: #676770;
+  font-family: "Roboto";
+  font-size: 11px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .Header_title div > div h1 {
+    font-size: 10px;
+  }
+}
+header .Menu_conatiner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(36, 83, 212);
+  padding: 0 200px;
+}
+header .Menu_conatiner .Mini_logo {
+  width: 68px;
+  height: 22px;
+  display: none;
+}
+header .Menu_conatiner .Mini_logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Mini_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner {
+    background-color: white;
+  }
+}
+header .Menu_conatiner #Menu_toggle {
+  display: none;
+  color: #000;
+  transition: 0.4s;
+}
+header .Menu_conatiner #Menu_toggle:hover {
+  color: rgb(36, 83, 212);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner #Menu_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    justify-content: flex-start;
+    padding: 0 20px;
+    z-index: 10000000000000000;
+  }
+}
+header .Menu_conatiner .Menu_box > ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (min-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul li:nth-child(3):hover > .Under_menu {
+    opacity: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+header .Menu_conatiner .Menu_box > ul .Logo_box {
+  margin-right: 10px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul .Logo_box {
+    display: none;
+  }
+}
+header .Menu_conatiner .Menu_box > ul > li {
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul > li {
+    position: relative;
+  }
+}
+header .Menu_conatiner .Menu_box > ul > li #Angle_right {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+header .Menu_conatiner .Menu_box > ul > li #Angle_right:hover {
+  cursor: pointer;
+}
+@media (min-width: 1025px) {
+  header .Menu_conatiner .Menu_box > ul > li #Angle_right {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  header .Menu_conatiner .Menu_box > ul > li #Home {
+    background-color: rgb(28, 73, 195);
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul > li #Home {
+    color: rgb(28, 73, 195);
+  }
+}
+@media (min-width: 1025px) {
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu {
+    width: auto;
+    position: absolute;
+    top: 102px;
+    height: 0;
+    border: 1px solid rgba(51, 51, 51, 0.21);
+    border-radius: 8px;
+    list-style: none;
+    z-index: 999999999999999;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li {
+    width: 200px;
+    height: auto;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li a {
+    text-decoration: none;
+    color: #676770;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li a:hover {
+    color: 777;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu {
+    position: static;
+    height: 0;
+    overflow: hidden;
+    width: auto;
+    transition: opacity 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li {
+    width: 200px;
+    height: auto;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li a {
+    text-decoration: none;
+    color: #676770;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu li a:hover {
+    color: 777;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res {
+    height: 0;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res li {
+    width: 200px;
+    height: auto;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res li a {
+    text-decoration: none;
+    color: #676770;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res li a:hover {
+    color: 777;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res_active {
+    height: 70px;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res_active li {
+    width: 200px;
+    height: auto;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res_active li a {
+    text-decoration: none;
+    color: #676770;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    transition: 0.4s;
+  }
+  header .Menu_conatiner .Menu_box > ul > li .Under_menu_low_res_active li a:hover {
+    color: 777;
+  }
+}
+header .Menu_conatiner .Menu_box > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-transform: none;
+  display: block;
+  padding: 20px 20px;
+  transition: 0.4s;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .Menu_box > ul > li > a {
+    width: 100%;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    padding: 15px 0;
+  }
+  header .Menu_conatiner .Menu_box > ul > li > a:hover {
+    color: rgb(28, 73, 195);
+  }
+}
+@media (min-width: 1025px) {
+  header .Menu_conatiner .Menu_box > ul > li > a:hover {
+    background-color: rgb(28, 73, 195);
+  }
+}
+header .Menu_conatiner .About_account_box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  header .Menu_conatiner .About_account_box {
+    display: none;
+  }
+}
+header .Menu_conatiner .About_account_box ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+header .Menu_conatiner .About_account_box ul i {
+  font-size: 20px;
+  color: white;
+  transition: 0.4s;
+}
+header .Menu_conatiner .About_account_box ul i:hover {
+  color: #303030;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Team_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 300px;
+  gap: 20px;
+  background-color: #f3f6fb;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Team_container {
+    padding: 100px 50px;
+    align-items: center;
+  }
+}
+.Team_container h1 {
+  color: #000;
+  font-family: roboto, sans-serif;
+  font-size: 46px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Team_container #Team_info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Team_container #Team_info {
+    justify-content: center;
+  }
+}
+.Team_container #Team_info .Person_box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Team_container #Team_info .Person_box .Img_box {
+  width: 166px;
+  height: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.Team_container #Team_info .Person_box .Img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Team_container #Team_info .Person_box .Info_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.Team_container #Team_info .Person_box .Info_box span {
+  color: #676770;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Team_container #Team_info .Person_box .Info_box h1 {
+  color: #000;
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}/*# sourceMappingURL=team.css.map */

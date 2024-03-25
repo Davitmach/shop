@@ -1,0 +1,860 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+.Main .Bar_box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 83, 212);
+  border-radius: 8px;
+  padding: 15px;
+}
+.Main .Bar_box ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 40px;
+}
+.Main .Bar_box ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+.Main .Bar_box ul a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  border-radius: 8px;
+  width: 0px;
+  bottom: -5px;
+  right: 0;
+  transition: 0.4s;
+}
+.Main .Bar_box ul a:hover::before {
+  left: 0;
+  width: 100%;
+}
+.Main .Main_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box .Users_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box .Users_container ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box .Users_container ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.Main .Main_box .Users_container ul li > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box .Users_container ul li > div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box .Users_container ul li > div h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Users_container ul li > div h2 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Users_container ul li > div span {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Users_container ul li > div a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.4s;
+}
+.Main .Main_box .Users_container ul li > div a:hover {
+  color: rgba(255, 255, 255, 0.59);
+}
+.Main .Main_box .Product_container {
+  gap: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main .Main_box .Product_container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box .Product_container input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: black;
+}
+.Main .Main_box .Product_container button {
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: white;
+}
+.Main .Main_box .Product_container input:hover {
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box .Product_container input:focus {
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box .Product_container input::-moz-placeholder {
+  color: white;
+}
+.Main .Main_box .Product_container input::placeholder {
+  color: white;
+}
+.Main .Main_box .Product_container input:hover::-moz-placeholder {
+  color: gray;
+}
+.Main .Main_box .Product_container input:hover::placeholder {
+  color: gray;
+}
+.Main .Main_box .Product_container ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box .Product_container ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.Main .Main_box .Product_container ul li > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box .Product_container ul li > div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box .Product_container ul li > div h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Product_container ul li > div h2 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Product_container ul li > div span,
+.Main .Main_box .Product_container ul li > div p {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box .Product_container ul li > div a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.4s;
+}
+.Main .Main_box .Product_container ul li > div a:hover {
+  color: rgba(255, 255, 255, 0.59);
+}
+.Main .Main_box #Message_container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Message_container table {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: orange;
+}
+.Main .Main_box #Message_container table th {
+  background-color: rgba(0, 0, 0, 0.954);
+}
+.Main .Main_box #Message_container table th,
+.Main .Main_box #Message_container table td {
+  padding: 10px;
+}
+.Main .Main_box #Message_container table th img,
+.Main .Main_box #Message_container table td img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid orange;
+}
+.Main .Main_box #Message_container table th a,
+.Main .Main_box #Message_container table td a {
+  text-decoration: none;
+  color: orange;
+  font-weight: 700;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: black;
+  border: 3px solid orange;
+  transition: 0.4s;
+}
+.Main .Main_box #Message_container table th a:hover,
+.Main .Main_box #Message_container table td a:hover {
+  background-color: orange;
+  color: black;
+}
+.Main .Main_box #Blog_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.Main .Main_box #Blog_container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Blog_container input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: black;
+  cursor: pointer;
+}
+.Main .Main_box #Blog_container button {
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+}
+.Main .Main_box #Blog_container input:hover {
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Blog_container input:focus {
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Blog_container input::-moz-placeholder {
+  color: white;
+}
+.Main .Main_box #Blog_container input::placeholder {
+  color: white;
+}
+.Main .Main_box #Blog_container input:hover::-moz-placeholder {
+  color: gray;
+}
+.Main .Main_box #Blog_container input:hover::placeholder {
+  color: gray;
+}
+.Main .Main_box #Blog_container ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Blog_container ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.Main .Main_box #Blog_container ul li > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Blog_container ul li > div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box #Blog_container ul li > div h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Blog_container ul li > div h2 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Blog_container ul li > div span,
+.Main .Main_box #Blog_container ul li > div p {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Blog_container ul li > div a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.4s;
+}
+.Main .Main_box #Blog_container ul li > div a:hover {
+  color: rgba(255, 255, 255, 0.59);
+}
+.Main .Main_box #Popular_product_box {
+  gap: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main .Main_box #Popular_product_box form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Popular_product_box input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: rgb(200, 128, 128);
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: black;
+}
+.Main .Main_box #Popular_product_box button {
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: white;
+}
+.Main .Main_box #Popular_product_box input:hover {
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Popular_product_box input:focus {
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Popular_product_box input::-moz-placeholder {
+  color: white;
+}
+.Main .Main_box #Popular_product_box input::placeholder {
+  color: white;
+}
+.Main .Main_box #Popular_product_box input:hover::-moz-placeholder {
+  color: gray;
+}
+.Main .Main_box #Popular_product_box input:hover::placeholder {
+  color: gray;
+}
+.Main .Main_box #Popular_product_box ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Popular_product_box ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.Main .Main_box #Popular_product_box ul li > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Popular_product_box ul li > div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box #Popular_product_box ul li > div h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Popular_product_box ul li > div h2 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Popular_product_box ul li > div span,
+.Main .Main_box #Popular_product_box ul li > div p {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Popular_product_box ul li > div a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.4s;
+}
+.Main .Main_box #Popular_product_box ul li > div a:hover {
+  color: rgba(255, 255, 255, 0.59);
+}
+.Main .Main_box #Most_popular_container {
+  gap: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main .Main_box #Most_popular_container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Most_popular_container input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: rgb(200, 128, 128);
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: black;
+}
+.Main .Main_box #Most_popular_container button {
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  background: gray;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  color: white;
+}
+.Main .Main_box #Most_popular_container input:hover {
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Most_popular_container input:focus {
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.4);
+}
+.Main .Main_box #Most_popular_container input::-moz-placeholder {
+  color: white;
+}
+.Main .Main_box #Most_popular_container input::placeholder {
+  color: white;
+}
+.Main .Main_box #Most_popular_container input:hover::-moz-placeholder {
+  color: gray;
+}
+.Main .Main_box #Most_popular_container input:hover::placeholder {
+  color: gray;
+}
+.Main .Main_box #Most_popular_container ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Most_popular_container ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.Main .Main_box #Most_popular_container ul li > div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Most_popular_container ul li > div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box #Most_popular_container ul li > div h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Most_popular_container ul li > div h2 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Most_popular_container ul li > div span,
+.Main .Main_box #Most_popular_container ul li > div p {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Most_popular_container ul li > div a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.4s;
+}
+.Main .Main_box #Most_popular_container ul li > div a:hover {
+  color: rgba(255, 255, 255, 0.59);
+}
+.Main .Main_box #Liked_container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Liked_container table {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Liked_container table tr {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a1a;
+}
+.Main .Main_box #Liked_container table tr td {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Liked_container table tr td img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box #Liked_container table tr td h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Main .Main_box #Cart_container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Cart_container table {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Main_box #Cart_container table tr {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a1a;
+}
+.Main .Main_box #Cart_container table tr td {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px 40px;
+  gap: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Main_box #Cart_container table tr td img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Main_box #Cart_container table tr td h1 {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}/*# sourceMappingURL=admin.css.map */

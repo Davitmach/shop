@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+#Slider_container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #f3f6fb;
+    position: relative;
+    padding: 50px 0;
+
+    // NAVIGATION  
+    #Navigation_box {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        z-index: 99999;
+
+
+
+        #Angle_left2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            overflow: hidden;
+
+            &:hover div {
+                transform: translateX(0);
+                cursor: pointer;
+            }
+
+            div {
+                transform: translateX(-20px);
+                transition: .4s;
+            }
+
+            i {
+                font-size: 30px;
+                color: black;
+            }
+        }
+
+        #Aj2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            overflow: hidden;
+
+            &:hover div {
+                transform: translateX(0);
+                cursor: pointer;
+            }
+
+            div {
+                transform: translateX(20px);
+                transition: .4s;
+            }
+
+            i {
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+
+    // PAGINATION 
+    #Pagination_box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+        z-index: 9999;
+        padding: 24px 200px;
+
+        gap: 10px;
+
+        @media (min-width:320px) and (max-width:1024px) {
+            padding: 24px 30px;
+        }
+
+        @media (min-width:320px) and (max-width:552px) {
+            padding: 24px 30px;
+            justify-content: flex-end;
+        }
+
+        &>div {
+            border-radius: 50%;
+            padding: 4px;
+            border: 2px solid black;
+            transition: .4s;
+
+            &:hover {
+                background-color: black;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // SLIDER 
+    #Slider_box2 {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Slide_page {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            padding: 0 50px;
+
+            @media (min-width:320px) and (max-width:1024px) {
+                padding: 0px 20px;
+                flex-wrap: wrap;
+            }
+
+            .Info_box {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                .Title_box {
+                    max-width: 300px;
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    animation: Title .4s .1s ease forwards;
+
+                    @keyframes Title {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-30px);
+                        }
+
+                        to {
+
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+
+                    h1 {
+                        z-index: 11;
+                        font-family: Roboto;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 46px;
+
+                        @media (min-width:320px) and (max-width:1024px) {
+                            font-size: 20px;
+                        }
+
+                    }
+
+
+
+                }
+
+
+
+                .Description_box {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    animation: Description .4s .2s ease forwards;
+
+                    @keyframes Description {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-30px);
+                        }
+
+                        to {
+
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+
+                    p {
+                        font-family: Roboto;
+                        color: rgb(103, 103, 112);
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+
+                .Price_box {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    animation: Description .4s .2s ease forwards;
+
+                    @keyframes Description {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-30px);
+                        }
+
+                        to {
+
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+
+                    h1 {
+                        font-family: Roboto;
+                        color: rgb(0, 0, 0);
+                        font-weight: 400;
+                        font-size: 41px;
+                    }
+
+                }
+
+
+                .Button {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    animation: Button .4s .3s ease forwards;
+
+                    @keyframes Button {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-30px);
+                        }
+
+                        to {
+
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    color: #fff;
+                    font-family: roboto,
+                    sans-serif;
+                    font-size: 12px;
+                    line-height: 46px;
+                    height: 46px;
+                    font-style: normal;
+                    font-weight: 700;
+                    background-color: #2453d4;
+                    border-radius: 8px;
+                    letter-spacing: 0;
+                    text-transform: uppercase;
+                    border-width: 0;
+                    padding-left: 33px;
+                    padding-right: 33px;
+                    z-index: 99999999;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .Photo_box {
+                z-index: 9999;
+                width: 60%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                @media (min-width:320px) and (max-width:768px) {
+                    width: 500px;
+                    height: 200px;
+                }
+                @media (min-width:768px) and (max-width:1200px) {
+                    width: 500px;
+                    height: 300px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+            }
+
+            .Photo1 {
+                transform: translateY(30px);
+                opacity: 0;
+                animation: Photo1 .4s .1s ease forwards;
+
+                @keyframes Photo1 {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-30px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .Photo2 {
+                transform: translateY(30px);
+                opacity: 0;
+                animation: Photo2 .4s .1s ease forwards;
+
+                @keyframes Photo2 {
+                    from {
+                        opacity: 0;
+                        transform: translateX(-30px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+            .Photo3 {
+                transform: translateY(30px);
+                opacity: 0;
+                animation: Photo3 .4s .1s ease forwards;
+
+                @keyframes Photo3 {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}

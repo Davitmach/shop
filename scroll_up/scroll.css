@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#Scroll {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: #2453d4;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#Scroll a {
+  color: white;
+  display: block;
+  padding: 13px 16px;
+}
+#Scroll:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=scroll.css.map */

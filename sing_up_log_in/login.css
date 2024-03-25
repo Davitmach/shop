@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Login_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 250px;
+}
+.Login_container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Login_container form h1 {
+  color: #000;
+  font-family: roboto, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Login_container form a {
+  text-decoration: none;
+  color: #000;
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+.Login_container form > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.Login_container form > div input[type=text] {
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  background: transparent;
+  outline: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.Login_container form > div input[type=text]::-moz-placeholder {
+  color: #71788b;
+}
+.Login_container form > div input[type=text]::placeholder {
+  color: #71788b;
+}
+.Login_container form > div input[type=text]:focus {
+  border-color: rgb(36, 83, 212);
+}
+.Login_container form > div button {
+  color: #fff;
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  height: 46px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #2453d4;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=login.css.map */

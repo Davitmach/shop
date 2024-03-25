@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.User_Header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  gap: 20px;
+}
+.User_Header .User_Img_Box {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(36, 83, 212);
+}
+.User_Header .User_Img_Box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.User_Header .User_Info h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.User_Header .User_Info h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.User_Header .User_Info button {
+  color: #fff;
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  line-height: 46px;
+  height: 46px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #2453d4;
+  border-radius: 8px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-width: 0;
+  padding-left: 33px;
+  padding-right: 33px;
+  z-index: 99999999;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.User_Header .User_Info a {
+  color: #fff;
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  line-height: 46px;
+  padding: 15px 33px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #2453d4;
+  border-radius: 8px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-width: 0;
+  z-index: 99999999;
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: none;
+}/*# sourceMappingURL=page.css.map */

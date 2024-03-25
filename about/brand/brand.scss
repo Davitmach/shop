@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Brand_container1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 200px;
+    gap: 40px;
+
+    @media (min-width:320px) and (max-width:1200px) {
+        padding: 100px 5px;
+    }
+
+
+    h1 {
+        color: #000;
+        font-family: roboto, sans-serif;
+        font-size: 46px;
+        line-height: 52px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+
+    #Brand_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        #row1,
+        #row2,
+        #row3 {
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 80px;
+
+            @media (min-width:320px) and (max-width:552px) {
+               justify-content: center;
+            }
+
+            .Brand_img {
+                width: 118px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition: .4s;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        #row2,
+        #row3 {
+
+            @media (min-width:320px) and (max-width:1200px) {
+                display: none;
+            }
+        }
+    }
+}

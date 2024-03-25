@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 100px 100px;
+  flex-wrap: wrap;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main {
+    padding: 100px 0px;
+  }
+}
+.Main .Right_bar {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 150px;
+  gap: 70px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main .Right_bar {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 768px) {
+  .Main .Right_bar {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Main .Right_bar {
+    width: 100%;
+  }
+}
+.Main .Right_bar .Input_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Right_bar .Input_box input {
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  background: transparent;
+  outline: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.Main .Right_bar .Input_box input::-moz-placeholder {
+  color: #71788b;
+}
+.Main .Right_bar .Input_box input::placeholder {
+  color: #71788b;
+}
+.Main .Right_bar .Input_box input:focus {
+  border-color: rgb(36, 83, 212);
+}
+.Main .Right_bar .Input_box button {
+  border: none;
+  background: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 45px;
+  right: 60px;
+  cursor: pointer;
+}
+.Main .Right_bar .Input_box button:hover::before {
+  height: 45px;
+}
+.Main .Right_bar .Input_box button:hover i {
+  color: white;
+}
+.Main .Right_bar .Input_box button::before {
+  content: "";
+  background-color: rgb(36, 83, 212);
+  position: absolute;
+  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+  height: 0;
+}
+.Main .Right_bar .Input_box button .fa-magnifying-glass {
+  width: auto;
+  height: auto;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.Main .Right_bar .Product_box {
+  width: 100%;
+  height: 755px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main .Right_bar .Product_box {
+    height: 500px;
+  }
+}
+.Main .Right_bar .Product_box:hover .Background_box {
+  transform: scale(1.1);
+}
+.Main .Right_bar .Product_box .Background_box {
+  width: 100%;
+  height: 100%;
+  background: url("https://bridge505.qodeinteractive.com/wp-content/uploads/2022/10/blog-sidebar-banner-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  transition: 0.4s;
+}
+.Main .Right_bar .Product_box .Info_box {
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Right_bar .Product_box .Info_box h1 {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #000;
+}
+.Main .Right_bar .Product_box .Info_box button {
+  background: none;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Main .Right_bar .Posts_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main .Right_bar .Posts_container h1 {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #000;
+}
+.Main .Right_bar .Posts_container .Posts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box button {
+  background: none;
+  border: none;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box .Img_box {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box .Img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box h1 {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #000;
+}
+.Main .Right_bar .Posts_container .Posts .Post_box span {
+  width: 100%;
+  color: #8f96ac;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+.Main .Post_container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 40px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Main .Post_container {
+    width: 100%;
+  }
+}
+.Main .Post_container .Blog_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Main .Post_container .Blog_box .Img_box {
+  width: 100%;
+  height: 559px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main .Post_container .Blog_box .Img_box {
+    height: 300px;
+  }
+}
+.Main .Post_container .Blog_box .Img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Post_container .Blog_box .Info_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Main .Post_container .Blog_box .Info_box .Date span {
+  font-family: Roboto;
+  font-size: 11px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #6d758d;
+}
+.Main .Post_container .Blog_box .Info_box .Title h1 {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #000;
+}
+.Main .Post_container .Blog_box .Info_box .Description p {
+  color: #676770;
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 800px;
+  width: 100%;
+}
+.Main .Post_container .Blog_box .Info_box button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  line-height: 46px;
+  height: 46px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #2453d4;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-width: 0;
+  padding-left: 33px;
+  padding-right: 33px;
+  cursor: pointer;
+}
+.Main .Post_container .Blog_box .Info_box .Qoute_box {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 70px;
+}
+.Main .Post_container .Blog_box .Info_box .Qoute_box p {
+  font-weight: 500;
+  color: #000 !important;
+  font-size: 26px;
+  line-height: 1.3078em;
+  font-family: Roboto;
+}
+.Main .Post_container .Blog_box .Info_box .Qoute_box i {
+  font-size: 40px;
+}
+.Main .Post_container #Pagination_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 40px 40px;
+}
+.Main .Post_container #Pagination_box a {
+  text-decoration: none;
+  background-color: #2453d4;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.Main .Post_container #Pagination_box a:hover {
+  background-color: #fff;
+  color: #2453d4;
+  border-color: #2453d4;
+}/*# sourceMappingURL=blog_page.css.map */

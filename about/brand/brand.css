@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Brand_container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 200px;
+  gap: 40px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Brand_container1 {
+    padding: 100px 5px;
+  }
+}
+.Brand_container1 h1 {
+  color: #000;
+  font-family: roboto, sans-serif;
+  font-size: 46px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.Brand_container1 #Brand_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.Brand_container1 #Brand_box #row1,
+.Brand_container1 #Brand_box #row2,
+.Brand_container1 #Brand_box #row3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Brand_container1 #Brand_box #row1,
+  .Brand_container1 #Brand_box #row2,
+  .Brand_container1 #Brand_box #row3 {
+    justify-content: center;
+  }
+}
+.Brand_container1 #Brand_box #row1 .Brand_img,
+.Brand_container1 #Brand_box #row2 .Brand_img,
+.Brand_container1 #Brand_box #row3 .Brand_img {
+  width: 118px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Brand_container1 #Brand_box #row1 .Brand_img img,
+.Brand_container1 #Brand_box #row2 .Brand_img img,
+.Brand_container1 #Brand_box #row3 .Brand_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.4s;
+}
+.Brand_container1 #Brand_box #row1 .Brand_img img:hover,
+.Brand_container1 #Brand_box #row2 .Brand_img img:hover,
+.Brand_container1 #Brand_box #row3 .Brand_img img:hover {
+  opacity: 0.8;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Brand_container1 #Brand_box #row2,
+  .Brand_container1 #Brand_box #row3 {
+    display: none;
+  }
+}/*# sourceMappingURL=brand.css.map */
